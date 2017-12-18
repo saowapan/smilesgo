@@ -1,0 +1,157 @@
+/* custom header page */
+#lookingfor{
+    >section{
+        display: none;
+    }
+    >section.widget.search-2.widget_search{
+        display: block;
+    }
+}
+
+.section-header{
+	background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container-fluid{
+    	padding-top: 110px;
+    	padding-bottom: 40px;
+    	background-color :$color-main-opacity;
+    }
+}
+.content-header{
+	color: $color-white;
+    padding-bottom: 40px;
+	a{
+		color: $color-white;
+	    border: 1px solid;
+	    padding: 10px 15px;
+	    display: inline-block;
+	    margin-top: 15px;
+	    &:hover{
+	    	background-color: $colo-white-opacity;
+			color: $color-white;
+	    } 
+	    i{
+			margin-left: 15px;
+		}
+	}
+	p{
+		i{
+			margin-right: 15px;
+		}
+	}
+}
+.section-search>.row{
+    height: 169px;
+}
+.section-search{
+    ul.nav-tabs{
+    	border-bottom: none;
+    	li{
+    	    margin-bottom: 0;
+    		a{
+    			color: $color-white;
+    			border: none;
+    			margin-right : 3px;
+    			border-radius : 5px 5px 0 0;
+    			background-color: $color-black-opacity;
+    		}
+    	}
+    	li.active{
+    		a{
+    			background-color: $colo-white-opacity;
+			    border: none;
+                color: $color-white;
+    		}
+    	}
+    }
+    .tab-content{
+        padding: 15px;
+	    background-color: $colo-white-opacity;
+	    border-radius: 0 5px 5px 5px;
+    }
+    form{
+    	i{
+		    position: absolute;
+		    top: 46%;
+		  	transform:translate(0,-50%);
+		    color: $color-gray;
+	    }
+    	.map-date{
+    		input{
+    			padding-left: 30px;
+    		}
+    		.input-center i{
+    			left: 15px;
+    		}
+    	}
+    }
+}
+.section-search {
+    form.search-form{
+        label{
+            width: 75%;
+            margin-bottom: 0;
+        }
+        input[type=submit]{
+            width: 23.5%;
+            float: right;
+            margin-left: 1.5%;
+        }
+    }
+}
+#location select{
+    border: none;
+    border-radius: 0;
+    padding: 10px 15px;
+    width: 100%;
+    border-bottom: 3px solid  #b6b6b6;
+    color: $color-default;
+    font-weight: normal;
+    height: 45px;
+    appearance : none;
+    background-repeat: no-repeat;
+    background-position: 98% 55%;
+    background-size: 10px;
+}
+@media (max-width: 992px){
+   .section-search {
+        form.search-form{
+            input[type=submit]{
+                width: 23%;
+                margin-left: 2%;
+            }
+        }
+    } 
+}
+@media (max-width: 768px){
+    .section-header{
+        background-size: 1281px 853px;
+        background-position: 50% -85px;
+    }    
+    .section-search>.row{
+        height: auto;
+    }
+    .section-search{
+        form{
+            .map-date{
+                .input-center i{
+                    left: 23px;
+                }
+            } 
+        }
+    }
+    .section-search {
+        form.search-form{
+            label{
+                width: 100%;
+                margin-bottom: 7px;
+            }
+            input[type=submit]{
+                width: 100%;
+                margin-left: 0;
+                float: none;
+            }
+        }
+    }
+}

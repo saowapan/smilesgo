@@ -1,0 +1,51 @@
+@mixin prefixer($attr, $value) {
+  	-webkit-#{$attr}: $value;
+  	#{$attr}: $value;
+  	-ms-#{$attr}: $value;
+}
+
+@mixin valueprefixer($attr, $value) {
+  	#{$attr}: $value;
+  	#{$attr}: -webkit-#{$value};
+  	#{$attr}: -ms-#{$value};
+}
+.flex-start{
+	  @include valueprefixer(display, flex);    
+    @include prefixer(justify-content,flex-start);
+    @include prefixer(align-items, center);
+}
+.flex-end{
+	  @include valueprefixer(display, flex);    
+    @include prefixer(justify-content,flex-end);
+    @include prefixer(align-items, center);
+}
+.flex-between{
+	  @include valueprefixer(display, flex);    
+    @include prefixer(justify-content, space-between);
+    @include prefixer(align-items, center);
+}
+.flex-center{
+    @include valueprefixer(display, flex);    
+    @include prefixer(justify-content, center);
+    @include prefixer(align-items, center);
+}
+@media (max-width: 1200px){
+	.flex-col-md{
+		@include prefixer(flex-direction, column);
+	}
+}
+
+@media (max-width: 992px){
+	.flex-col-sm{
+		@include prefixer(flex-direction, column);
+	}
+}
+
+@media (max-width: 786px){
+  .display-block-col-xs{
+      display: block;
+  }
+	.flex-col-xs{
+		@include prefixer(flex-direction, column);
+	}
+}

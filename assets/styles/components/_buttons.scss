@@ -1,0 +1,39 @@
+.btn-custom{
+    display: inline-block;
+    border: none;
+    padding: 10px 15px !important;
+    width: 100%;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.btn-custom:hover{
+    color: $color-white;
+}
+
+
+.btn-submit{
+    border-bottom: 3px solid $color-btn-submit-main;
+    background-color: $color-btn-submit;
+}
+.btn-submit:hover{
+	background-color: lighten($color-btn-submit, 10%);
+}
+
+
+.btn-main{
+    border-bottom: 3px solid $color-main-dark;
+    background-color: $color-main;
+}
+.btn-main:hover{
+	background-color: lighten($color-main, 10%);
+}
+
+.btn-review {
+    border-bottom: 3px solid $color-btn-review-main;
+    background-color: $color-btn-review;
+}
+.btn-review:hover{
+    background-color: lighten($color-btn-review, 5%);
+}

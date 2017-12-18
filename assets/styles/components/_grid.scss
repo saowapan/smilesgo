@@ -1,0 +1,48 @@
+.dentistry-post_type{
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: #f5f5f5;
+    thead{
+    	/*background-color: $color-main-dark-dark ;*/
+    	background-color: $color-main-dark;
+    	color: $color-white;
+    	font-size: 18px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    text-align: center;
+	    tr td{
+	    	padding: 15px;
+	        border: 1px solid #fff;
+	    }
+    }
+    tbody{
+    	tr.title-tbody{
+    		background-color: $color-main-dark;
+    		color: $color-white;
+    		font-size: 16px;
+		    font-weight: bold;
+		    td{
+		    	padding: 10px 15px;
+		        border: 1px solid #fff;
+		    }
+    	}
+    	tr td{
+	    	padding: 5px 15px;
+	    	font-size: 14px;
+	        border: 1px solid #fff;
+	    }
+    }
+}
+@media (max-width: 650px){
+	.dentistry-post_type {
+		thead tr td {
+			padding : 10px 5px;
+		}
+		tbody {
+			tr.title-tbody td,
+			tr td{
+				padding : 10px 5px;
+			}
+		}	
+	}
+}

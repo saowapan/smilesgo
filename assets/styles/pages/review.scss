@@ -1,0 +1,59 @@
+.form-review{
+	padding: 30px 15px;
+    background: $color-main-dark ;
+    color: $color-white ;
+    margin-bottom: 40px;
+}
+.title-review{
+	margin-top: 30px;
+    background: $color-main;
+    color: $color-white ;
+    h1{
+    	margin: 15px 0;
+    }
+}
+.star-review{
+	td{
+	    padding-right: 15px;
+	    color : $color-white ;
+	    font-size: 100%;
+    	font-weight: normal;
+	}
+	td.label{
+		padding-left : 0;
+	}
+	tr td:nth-child(3){
+	    display: block;	
+	}
+}
+/*  All reviews */
+.content-posttype {
+	.review-all{
+		>form,>div{
+		    padding-top: 30px;
+		}
+	}
+}
+@media (max-width: 992px){
+	/*  All reviews */
+	.content-posttype {
+		.review {
+			.review-item {
+				.review-header{
+				    display: block;
+				    h5,div{
+				    	width: 100%;
+				    }
+				    div p{
+				    	float: left;
+				    }
+				}
+			}
+		}		
+		.review-all{
+			>form,>div{
+				padding: 7px 0;
+			}
+		}
+	}
+}

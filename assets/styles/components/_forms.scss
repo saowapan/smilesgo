@@ -1,0 +1,129 @@
+form{
+	input[type="text"],input[type=search],input[type=email],textarea,select{
+    	border: none;
+		border-radius: 0;
+		padding: 10px 15px;
+		width: 100%;
+		border-bottom: 3px solid  #b6b6b6;
+		color: $color-default;
+        font-weight: normal;
+    }
+    select,#datepicker{
+        appearance: none;
+        background-size: 10px;
+        background-position: 95% 50%;
+        background-repeat: no-repeat;
+    }
+    .form-group-treatment{
+        background-position: 97% 50%;
+    }
+    textarea{
+        height: 150px;
+    }
+    textarea:focus,select:focus{
+        outline : none;
+    }
+    .input-top{
+    	margin-bottom : 7px;
+    }
+    .input-left{
+    	padding-right: 7px;
+    }
+    .input-right{
+    	padding-left: 7px;
+    }
+    .input-center{
+    	padding: 0 7px;
+    }
+}
+
+form.search-form{
+    label {
+        span{
+            display: none;
+        }
+    }
+    input[type=submit]{
+        display: inline-block;
+        border: none;
+        padding: 10px 15px !important;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 3px solid $color-btn-submit-main;
+        background-color: $color-btn-submit;
+        &:hover{
+            background-color: lighten($color-btn-submit, 10%);
+            color: $color-white;
+        }
+    }
+}
+@media (max-width: 992px){
+    form .form-group-treatment{
+        background-position: 95% 50%;
+    }
+}
+@media (max-width: 768px){
+    form {
+        .input-left{
+            padding-right: 15px;
+            margin-bottom: 7px;
+        }
+        .input-center{
+            padding: 0 15px;
+            margin-bottom: 7px;
+        }
+        .input-right{
+            padding-left: 15px;
+        }
+    }
+}
+
+.bs-example{
+    font-family: sans-serif;
+    position: relative;
+    margin: 50px;
+}
+.typeahead, .tt-query, .tt-hint {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 8px 12px;
+    width: 396px;
+}
+.typeahead {
+    background-color: #FFFFFF;
+}
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999999;
+}
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+.tt-suggestion {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}

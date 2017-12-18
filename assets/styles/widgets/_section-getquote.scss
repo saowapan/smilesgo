@@ -1,0 +1,17 @@
+.section-get-quote{
+	background-position: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .container-fluid{
+    	padding-top: 40px;
+	    padding-bottom: 40px;
+	    background-color: $color-main-opacity;
+	    text-align: center;
+    	color: #fff;
+    }
+}
+@media (max-width: 650px){
+    .section-get-quote{
+        background-size: cover;
+    }
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('../fonts/ostrich-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ostrich-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url('../fonts/RobotoCondensed-Light.WOFF') format('WOFF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body{
+	font-family: 'RobotoCondensed-Light';
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: $color-gray;
+}
+body {
+	a{
+		color : $color-default;
+		&:hover,&:focus,{
+			color: $color-main;
+		    text-decoration: none;
+		}
+	}
+	button,input{
+		&:focus,&:hover{		        
+	      	outline: none;
+		}
+	}	
+}
+
+body.error404.admin-bar{
+	.top-affix.affix{
+		top: 32px;
+	}
+}
+body.error404{
+	.page-header{
+		display: none;
+	}
+	.top-affix.affix{
+		top: 0;
+	}
+}
+#map{
+	.gm-style-cc{
+		display: none;
+	}
+}
+
+
+.break-word{
+	overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    word-break: break-word;
+}

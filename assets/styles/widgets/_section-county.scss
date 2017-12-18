@@ -1,0 +1,111 @@
+.section-county{
+	padding-top: 40px;
+    padding-bottom: 40px;
+	.county-row{
+		margin-right: -7px;
+    	margin-left: -7px;
+    	padding-top: 15px;
+	}
+	.treatments-row {
+		.county-box>a,.county-box>.box-a{
+			padding: 70px 15px;
+		}
+		.county-box{
+			h2{
+				font-size: 25px;
+			}
+		}	
+	}
+	.county-box{
+		padding: 7px;
+		h4,h2{
+			color: $color-white;
+		    text-transform: capitalize;
+		    font-weight: bold;
+		    font-size: 35px;
+		    margin: 0;
+		    position: relative;
+    		z-index: 1;
+    	    text-shadow: 0 0 5px $color-gray;
+		}
+		.hover{
+			display: none;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		    background: $color-main-opacity;
+		}
+		p{
+			display: none;
+			margin: 10px 0 0;
+		    padding: 5px 15px;
+		    border: 1px solid;
+		    color: $color-white;;
+		    position: absolute;
+		    z-index: 1;
+		    left: 50%;
+		    transform: translate(-50%,0);
+		}
+	}
+	.county-box>a,.county-box>.box-a{
+		padding: 100px 15px;
+    	text-align: center;
+    	background-size: cover;	
+    	background-position: 50%;
+        display: inline-block;
+    	width: 100%;
+    	&:hover{
+    		.hover , p{
+    			display: inline-block;
+    		}
+    	}
+    	p{
+    		width: 150px;
+    	}
+    }
+}	
+@media (max-width: 768px){
+	.section-county {
+		.county-box>a,.county-box>.box-a{
+			padding: 70px 15px;
+		}
+	}
+}
+@media (max-width: 600px){
+	.section-county {
+		.county-row{
+			margin : 0;
+		}
+		.treatments-row .county-box a,.treatments-row .county-box .box-a{
+			padding: 50px 15px 100px;
+			h2{
+				font-size: 35px;
+			}
+		}
+		.county-box{
+			width: 70%;
+			padding: 0;
+		    margin: 7px 15%;
+			>a,>.box-a{
+				padding: 50px 15px 100px;
+				.hover , p{
+    				display: inline-block;
+    			}	
+    			.hover{
+    				background: rgba(0, 94, 184, 0.4)
+    			}
+    		}
+		}
+	}	
+}
+@media (max-width: 450px){
+	.section-county {
+		.county-box{
+			width: 100%;
+		    margin: 7px 0;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.aboutus-thailand,.aboutus-works{
+	h2,h1{
+		color:$color-main-dark;
+		font-weight: bold;
+		font-size :40px;
+	}
+}
+.aboutus-works,.aboutus-thailand{
+	h4{
+		color:$color-main;
+		font-weight: bold;
+	}
+}
+.aboutus-thailand{	
+	h4{
+    	font-size: 24px;
+	}
+	.flex-center{
+	    margin-top: 40px;
+	    margin-bottom : 40px;
+	}
+}
+.aboutus-box{
+	padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:$color-main-opacity;
+    color:$color-white;
+	h4{
+		color:$color-main-dark ;
+		font-weight: bold;
+	}
+	img{
+		margin-bottom : 10px;
+	}
+}
+.aboutus-works{
+	padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:#eee;
+    h2{
+     	margin-top: 0px;
+    	margin-bottom: 40px;	
+    }
+}
+@media (max-width: 768px){
+	.aboutus-thailand{
+		.flex-center{
+		   	display: block;
+		   	margin-top: 20px;
+    		margin-bottom: 20px;
+    		img{
+    			display: none;
+    		}
+		}
+	}
+}

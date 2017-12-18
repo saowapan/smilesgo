@@ -1,0 +1,31 @@
+.conact-form{
+	form{
+		p{
+		    text-align: center;
+		}
+		label{
+			color: $color-main;
+	    	width: 100%;
+	    	text-align: left;
+    		margin-bottom: 15px;
+		}
+		input[type=text],input[type=email],textarea{
+			border: 1px solid #eee;
+	    	border-radius: 3px;
+		}
+		input[type=submit]{
+		    border: none;
+		    width: 200px;
+		    padding: 10px 15px;
+		    color: $color-white;
+		    text-transform: uppercase;
+		    text-align: center;
+		    border-bottom: 3px solid $color-btn-submit-main;
+    		background-color: $color-btn-submit;
+		}
+		input[type=submit]:hover{
+		    color: $color-white;
+		    background-color: lighten($color-btn-submit, 10%);
+		}
+	}
+}
